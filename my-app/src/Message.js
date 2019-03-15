@@ -23,6 +23,17 @@ export default class Message extends Component {
 
 const Wrap = styled.div`
   color: #de4e68;
-  font-size: calc(18px + 0.25vw);
-  margin-top: 7%;
+  // font-size: 5vmin;
+  margin: 3%;
+
+  @media only screen and (min-width: 320px) and (max-width: 700px) {
+    font-size: 5vmin;
+  }
+  @media only screen and (min-width: 701px) and (max-width: 1500px) {
+    font-size: 6.5vmin;
+  }
+ 
+  @media only screen and (min-width: 1500px) {
+    font-size: 8vmin;
+  }
 `;

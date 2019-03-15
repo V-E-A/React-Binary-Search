@@ -19,7 +19,7 @@ export default class RangeItem extends Component {
   render() {
     const { searchedArray, objective, pivot, num, found } = this.props;
 
-    let color = "pink";
+    let color = "#e1696982";
     let pulsing = false;
 
     if (num === objective && found) {
@@ -28,7 +28,7 @@ export default class RangeItem extends Component {
     }
 
     if (num === searchedArray[pivot] && !found) {
-      color = "#c0daff";
+      color = "#69c0e1";
     }
 
     if (this.state.dimmed === "true") {
@@ -42,13 +42,40 @@ export default class RangeItem extends Component {
       text-align: center;
       width: 5vw;
       height: 5vw;
-      font-size: 2.5vmin;
+      // font-size: 2.5vmin;
       justify-content: center;
       align-items: center;
       display: flex;
       position: absolute;
-      padding-bottom: 0.5%;
+      padding-bottom: 1%;
       z-index: 1;
+      @media only screen and (min-width: 220px) and (max-width: 319px) {
+        font-size: 0.4rem;
+      }
+      @media only screen and (min-width: 320px) and (max-width: 481px) {
+        font-size: 0.6rem;
+      }
+      @media only screen and (min-width: 480px) and (max-width: 600px) {
+        font-size: 0.9rem;
+      }
+      @media only screen and (min-width: 601px) and (max-width: 780px) {
+        font-size: 1rem;
+      }
+      @media only screen and (min-width: 781px) and (max-width: 960px) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (min-width: 961px) and (max-width: 1200px) {
+        font-size: 1.5rem;
+      }
+      @media only screen and (min-width: 1201px) and (max-width: 1500px) {
+        font-size: 1.7rem;
+      }
+      @media only screen and (min-width: 1501px) and (max-width: 2000px) {
+        font-size: 2rem;
+      }
+      @media only screen and (min-width: 2001px) {
+        font-size: 2.4rem;
+      }
     `;
 
     const Heart = styled.div`
@@ -62,6 +89,30 @@ export default class RangeItem extends Component {
       justify-content: center;
       align-items: center;
       display: flex;
+      @media only screen (min-width: 320px) and (orientation: portrait) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (min-width: 480px) and (max-width: 600px) {
+        font-size: 1.7rem;
+      }
+      @media only screen and (min-width: 601px) and (max-width: 780px) {
+        font-size: 2.2rem;
+      }
+      @media only screen and (min-width: 781px) and (max-width: 960px) {
+        font-size: 2.7rem;
+      }
+      @media only screen and (min-width: 961px) and (max-width: 1200px) {
+        font-size: 3.6rem;
+      }
+      @media only screen and (min-width: 1201px) and (max-width: 1500px) {
+        font-size: 4.6rem;
+      }
+      @media only screen and (min-width: 1501px) and (max-width: 2000px) {
+        font-size: 5.4rem;
+      }
+      @media only screen and (min-width: 2001px) {
+        font-size: 6.6rem;
+      }
     `;
 
     return (

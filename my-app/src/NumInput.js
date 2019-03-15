@@ -39,6 +39,8 @@ export default class NumInput extends Component {
   }
 }
 const InputBtn = styled.button`
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
   width: 45%;
   border: none;
   border-radius: 3px;
@@ -47,7 +49,8 @@ const InputBtn = styled.button`
   background-color: #e1697e;
   text-align: center;
   padding: 2%;
-  font-size: calc(16px + 0.25vw);
+  font-size: 5vmin;
+  
   &:hover {
     background-color: #de4e68;
     cursor: pointer;
@@ -56,15 +59,19 @@ const InputBtn = styled.button`
 `;
 
 const Input = withProps({ type: "number" })(styled("input")`
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
   color: white;
-  background-color: #c0daff;
+  background-color:#69c0e1;
   outline: none;
   border: none;
   width: 100%;
   text-align: center;
   padding: 2%;
   border-radius: 3px;
-  font-size: calc(16px + 0.25vw);
+  font-size: 5vmin;
+  margin-bottom:3%;
+
 `);
 
 const InputWrap = styled.div`

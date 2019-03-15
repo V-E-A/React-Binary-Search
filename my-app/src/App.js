@@ -51,7 +51,7 @@ class App extends Component {
   };
 
   foundHandler = pivot => {
-    this.setState({ found: true, message: `FOUND IT! AT INDEX ${pivot}` });
+    this.setState({ found: true, message: `FOUND IT AT INDEX ${pivot}!` });
   };
 
   notFoundHandler = () => {
@@ -61,12 +61,12 @@ class App extends Component {
   render() {
     return (
       <Wrap>
+        <Message message={this.state.message} />
+        <Range props={this.state} />
         <NumInput
           onClick={this.clickHandler}
           searchedArray={this.state.searchedArray}
         />
-        <Range props={this.state} />
-        <Message message={this.state.message} />
       </Wrap>
     );
   }
@@ -75,8 +75,8 @@ class App extends Component {
 export default App;
 
 const Wrap = styled.div`
-  width: 100%;
-  border-radius: 5px;
+  width: 85vw;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,8 +84,8 @@ const Wrap = styled.div`
   padding: 5%;
   background: linear-gradient(
     to bottom,
-    rgba(255, 186, 186, 0.52) 0%,
-    rgba(255, 255, 255, 1) 41%,
+    rgb(255, 186, 186) 0%,
+    rgba(242, 188, 188, 0.12) 41%,
     rgba(255, 255, 255, 1) 100%
   );
 `;

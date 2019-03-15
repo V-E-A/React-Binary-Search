@@ -7,7 +7,9 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 700;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

@@ -45,7 +45,7 @@ const Arr = styled.div`
 `;
 
 const Wrap = styled.div`
-  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   width: 100%;
